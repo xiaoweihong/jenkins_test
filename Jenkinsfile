@@ -16,11 +16,6 @@ pipeline {
         }
     }
     post {
-        failure {
-            123
-        }
-        success {
-            456
-        }
+
     }
 }
