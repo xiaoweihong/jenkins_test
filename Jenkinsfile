@@ -21,12 +21,12 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh './buildapp.sh'
+                sh 'bash buildapp.sh'
             }
         }
         stage('Deploy') {
             steps {
-                sh './deployapp.sh'
+                sh 'bash deployapp.sh'
             }
         }
     }
