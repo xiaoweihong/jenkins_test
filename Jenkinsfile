@@ -6,7 +6,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh './buildapp.sh'
+                sh './abc.sh'
             }
         }
         stage('Deploy') {
