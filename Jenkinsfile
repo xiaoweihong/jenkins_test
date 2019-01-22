@@ -6,7 +6,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 111
+                sh 'cat app.go'
             }
         }
 
