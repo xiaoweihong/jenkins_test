@@ -17,10 +17,10 @@ pipeline {
     }
     post {
         failure {
-            echo 123
+            123
         }
         success {
-            echo 456
+            456
         }
     }
 }
