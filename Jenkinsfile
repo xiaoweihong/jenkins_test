@@ -6,14 +6,10 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh './abc.sh'
+                echo "abc"
             }
         }
-        stage('Deploy') {
-            steps {
-                sh './deployapp.sh'
-            }
-        }
+
     }
     post {
         failure {
