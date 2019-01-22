@@ -6,12 +6,12 @@ pipeline {
 
         stage('Build') {
             steps {
-                bash './buildapp.sh'
+                sh './buildapp.sh'
             }
         }
         stage('Deploy') {
             steps {
-                bash './deployapp.sh'
+                sh './deployapp.sh'
             }
         }
     }
