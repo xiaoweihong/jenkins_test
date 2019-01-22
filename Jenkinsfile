@@ -9,7 +9,11 @@ pipeline {
                 sh 'bash buildapp.sh'
             }
         }
-
+        stage('Deploy') {
+            steps {
+                sh 'bash deployapp.sh'
+            }
+        }
     }
     post {
         failure {
